@@ -1,0 +1,88 @@
+--intro 👍👍👍
+--Jsx & basic vite react project setup with tailwind css 👍👍👍
+--vite VS webpack VS parcel and understanding build file 👍👍👍
+--basic react project folder structure & component architecture 👍👍👍
+
+--life cycle of react components 👍👍👍
+            1)Loading Phase
+            2)Change detection phase
+            3)Death/Exit from the component
+
+--important hooks :
+
+    --useState  --it is a variable which is managing the state of the component 👍👍👍
+    --useEffect -- a) It is called every time the component is loaded even before the jsx is rendered 👍👍👍
+                   b) every http request made with axios like GET,POST,PUT,PATCH and DELETE over APIs must be written over here 
+                    or a function called within the useEffect which  implement these request is called to make code modular, readable,
+                    and functional.
+                   c) It takes two parameters one is the callback function and the other is the dependency array
+                        syntax: useEffect(()=>{},[])   
+                        
+                   d)To associate or call the  useEffect hook on change on the state variable,
+                     the state variable is written within the dependency array.
+                        with state variable: useeffect(()=>{func()},[data]) data is a  state variable
+                        [data] being the dependency array and ()=>{func()} is the callback function
+
+                   e)For no state variables association we use empty variable as default
+                            syntax: useEffect(()=>{},[])
+
+    --mini project - movie api load filter and disply logic using useState and useEffect 👍👍👍
+    --axios, common function,setTimeout,setInterval,with cleanUp, 
+        usage under useEffect 👍👍👍
+    --useRef  this is same as dom manipulation 👍👍👍
+
+        -document.get	    	               |             	-useRef
+Context	Standard DOM API                       |               React Hook-
+Purpose	Directly access/manipulate DOM nodes   |	  Maintain mutable references in components
+Re-renders	Can cause re-renders if misused	   |          Does not trigger re-renders
+Usage	Any JavaScript environment             |      Specifically in React functional components
+ 
+ 
+    --rules for using hooks 👍👍👍
+    ✅ It only calls hooks at the top level.
+    ✅ It does not call hooks conditionally.
+    ✅ It returns state and is used correctly inside a component.
+    ✅ Hooks must be called inside a React function component or another hook.
+  
+--routing in react 👍👍👍
+--Link component 👍👍👍
+--useNavigate & useLocation 👍👍👍
+
+--making custom hooks 👍👍👍
+
+--deployment of react vite application
+
+--context APi & Global state management
+
+----->>>Self Study<<<-----
+Special npm packages   
+**React Toastify** 
+**React star Rating**
+**React Fast Marquee**
+**React Slick Slider**
+**framer motion**
+**react-icon**
+**sadsnUI**
+**RadixUI**
+**andDesign**
+**chakraUI**
+**LightgalaryReact**
+**React Modal**
+**React hot Toast**
+**Sweet Alert 2**
+**React table **
+**ReCharts**
+**React Player**
+**React Lottie**
+**React Spring**
+**React Hook Form**
+**React Select**
+**Emoji mart**
+**React Grid**
+**react Flexbox grid**
+ .env file 👍👍👍
+
+--multi component architecture -->>props , conditional rendrering ,customization over props 👍👍👍
+
+
+
