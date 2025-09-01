@@ -26,4 +26,5 @@ const marquee = () => {
   );
 };
 
+
 export default marquee;

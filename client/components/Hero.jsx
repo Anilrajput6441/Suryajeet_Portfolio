@@ -9,7 +9,7 @@ import {
 
 const Hero = () => {
   return (
-    <div className="relative min-h-[85vh]  bg-[#F3F4F6] w-full flex flex-col  space-y-10">
+    <div className=" min-h-[85vh] pt-20  bg-[#F3F4F6] w-full flex flex-col  space-y-10">
       <div className="text-center  ">
         {/* Top Line - Orange dash + "Hello There!" */}
         <div className="flex items-center justify-center space-x-3">

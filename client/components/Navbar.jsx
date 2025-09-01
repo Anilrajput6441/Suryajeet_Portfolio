@@ -7,22 +7,40 @@ const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [activeLink, setActiveLink] = useState("Home");
 
-  const navLinks = [
-    "Home",
-    "Services",
-    "About",
-    "Projects",
-    "Blogs",
-    "Testimonials",
-  ];
+  const navLinks = ["Home", "Services", "About", "Testimonials", "Contact"];
 
   const handleLinkClick = (link) => {
     setActiveLink(link);
     setIsMenuOpen(false);
+
+    // Smooth scroll to section
+    const scrollToSection = (sectionId) => {
+      const element = document.getElementById(sectionId);
+      if (element) {
+        element.scrollIntoView({
+          behavior: "smooth",
+          block: "start",
+        });
+      }
+    };
+
+    // Map navigation links to section IDs
+    const sectionMap = {
+      Home: "banner",
+      Services: "services",
+      About: "about",
+      Testimonials: "testimonials",
+      Contact: "contact",
+    };
+
+    const sectionId = sectionMap[link];
+    if (sectionId) {
+      scrollToSection(sectionId);
+    }
   };
 
   return (
-    <nav className="bg-gray-100 px-4 py-6">
+    <nav className=" px-4 py-6">
       <div className="max-w-7xl mx-auto">
         <div className="bg-white rounded-full shadow-lg px-6 py-4 flex items-center justify-between">
           {/* Logo/Image Placeholder */}
@@ -54,7 +72,10 @@ const Navbar = () => {
 
           {/* Contact Me Button */}
           <div className="hidden md:block">
-            <button className="bg-black text-white px-6 py-3 rounded-full font-medium hover:bg-gray-800 transition-colors duration-200">
+            <button
+              onClick={() => handleLinkClick("Contact")}
+              className="bg-black text-white px-6 py-3 rounded-full font-medium hover:bg-gray-800 transition-colors duration-200"
+            >
               Contact Me
             </button>
           </div>
@@ -108,7 +129,10 @@ const Navbar = () => {
                   {link}
                 </button>
               ))}
-              <button className="bg-black text-white px-6 py-3 rounded-full font-medium hover:bg-gray-800 transition-colors duration-200 w-full mt-4">
+              <button
+                onClick={() => handleLinkClick("Contact")}
+                className="bg-black text-white px-6 py-3 rounded-full font-medium hover:bg-gray-800 transition-colors duration-200 w-full mt-4"
+              >
                 Contact Me
               </button>
             </div>

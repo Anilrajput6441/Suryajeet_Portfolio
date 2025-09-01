@@ -1,3 +1,4 @@
+"use client";
 import React from "react";
 
 const Brands = () => {
@@ -28,7 +29,18 @@ const Brands = () => {
           </div>
 
           {/* Right Side - Button */}
-          <div className="lg:w-1/2 flex justify-center lg:justify-end">
+          <div
+            className="lg:w-1/2 flex justify-center lg:justify-end"
+            onClick={() => {
+              const element = document.getElementById("contact");
+              if (element) {
+                element.scrollIntoView({
+                  behavior: "smooth",
+                  block: "start",
+                });
+              }
+            }}
+          >
             <button className="bg-black text-white px-8 py-4 rounded-full font-bold text-lg cursor-pointer">
               Let's Work <span className="text-orange-500">→</span>
             </button>

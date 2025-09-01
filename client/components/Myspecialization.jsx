@@ -7,88 +7,92 @@ const Myspecialization = () => {
   const services = [
     {
       id: 0,
-      title: "E-Commerce Website Development",
+      title: "Custom Website Development",
       isOpen: openItem === 0,
-      subServices: ["Custom Website Development", "Growth Strategy  "],
+      subServices: [
+        "Custom Design",
+        "Performance Optimization",
+        "SEO-Friendly Structure",
+      ],
       description:
-        "Providing the best digital marketing services to help your brand to grow faster. I always give my best to help my clients.",
+        "Every business is unique, so a ready-made template doesn't always work. A custom website means the design and features are built specifically around your business needs. Gives a professional look, fast performance, SEO-friendly structure, and builds trust with customers.",
       image:
-        "https://images.unsplash.com/photo-1551650975-87deedd944c3?w=400&h=300&fit=crop",
+        "https://www.internetcreation.net/wp-content/uploads/2015/04/banner-web-development.png",
     },
     {
       id: 1,
-      title: "Google / Web Analytics",
+      title: "Shopify Website Development",
       isOpen: openItem === 1,
       subServices: [
-        "Google Analytics Setup",
-        "Data Tracking & Reporting",
-        "Conversion Optimization",
-        "Performance Monitoring",
+        "Custom-Coded Stores",
+        "High Conversion Optimization",
+        "Secure Payment Integration",
+        "Effortless Scalability",
       ],
       description:
-        "Providing the best digital marketing services to help your brand to grow faster. I always give my best to help my clients.",
+        "Shopify is the simplest and most scalable platform for eCommerce. We create custom-coded Shopify stores that are optimized for high conversions. Easy store management, secure payments, smooth order handling, and effortless scalability.",
       image:
-        "https://images.unsplash.com/photo-1551650975-87deedd944c3?w=400&h=300&fit=crop",
+        "https://www.nicepng.com/png/detail/267-2675863_shopify-card-shopify-web-designer-banner.png",
     },
     {
       id: 2,
-      title: "Social Media Marketing",
+      title: "Meta Ads (Facebook & Instagram Ads)",
       isOpen: openItem === 2,
       subServices: [
-        "Platform Strategy",
-        "Content Creation",
-        "Community Management",
-        "Paid Social Advertising",
+        "Audience Targeting",
+        "Lead Generation",
+        "Brand Awareness",
+        "ROI Optimization",
       ],
       description:
-        "Providing the best digital marketing services to help your brand to grow faster. I always give my best to help my clients.",
+        "With Meta Ads, we target the exact audience interested in your product or service. Drives quality leads, builds brand awareness, boosts sales, and delivers measurable ROI.",
       image:
-        "https://images.unsplash.com/photo-1551650975-87deedd944c3?w=400&h=300&fit=crop",
+        "https://itmunch.com/wp-content/uploads/2024/03/meta-banner-cta.webp",
     },
     {
       id: 3,
-      title: "Shopify Developer",
+      title: "Google Ads (Search, Display, YouTube)",
       isOpen: openItem === 3,
       subServices: [
-        "Custom Theme Development",
-        "E-commerce Solutions",
-        "App Integration",
-        "Performance Optimization",
+        "Search Campaigns",
+        "Display Advertising",
+        "YouTube Video Ads",
+        "Performance Tracking",
       ],
       description:
-        "Providing the best digital marketing services to help your brand to grow faster. I always give my best to help my clients.",
+        "Google Ads place your business directly in front of people actively searching for your products or services. High-intent audience, quick results, and performance tracking with clear ROI.",
       image:
-        "https://images.unsplash.com/photo-1551650975-87deedd944c3?w=400&h=300&fit=crop",
+        "https://www.nellaiseo.com/wp-content/uploads/2024/05/google-ads-services-in-chennai.jpg",
     },
     {
       id: 4,
-      title: "Search Engine Optimization",
+      title: "Educational LMS (Learning Management System)",
       isOpen: openItem === 4,
       subServices: [
-        "Technical SEO",
-        "On-Page Optimization",
-        "Link Building",
-        "Local SEO",
+        "Course Management",
+        "Student Progress Tracking",
+        "Online Exams",
+        "Professional Education Platform",
       ],
       description:
-        "Providing the best digital marketing services to help your brand to grow faster. I always give my best to help my clients.",
+        "For schools, coaching centers, or online trainers, we build an LMS where students can log in, access courses, track progress, and even take online exams. A professional system to sell and deliver online education seamlessly.",
       image:
-        "https://images.unsplash.com/photo-1551650975-87deedd944c3?w=400&h=300&fit=crop",
+        "https://www.shutterstock.com/image-vector/lms-learning-management-system-web-260nw-1886681293.jpg",
     },
     {
       id: 5,
-      title: "Performance Marketer",
-        isOpen: openItem === 5,
+      title: "Content Strategy & Marketing",
+      isOpen: openItem === 5,
       subServices: [
-        "ROI Optimization",
-        "Campaign Management",
-        "A/B Testing",
-        "Conversion Rate Optimization",
+        "Blog Strategy",
+        "Social Media Content",
+        "SEO Content Creation",
+        "Brand Authority Building",
       ],
       description:
-        "Providing the best digital marketing services to help your brand to grow faster. I always give my best to help my clients.",
+        "A website and ads aren't enough; content builds long-term trust. We create strategies for blogs, social media, and SEO content tailored to your brand. Establishes brand authority, drives organic traffic, and engages your audience effectively.",
       image:
-        "https://images.unsplash.com/photo-1551650975-87deedd944c3?w=400&h=300&fit=crop",
+        "https://cdn.vectorstock.com/i/1000v/32/92/content-marketing-banner-with-icons-website-vector-39813292.jpg",
     },
   ];
 

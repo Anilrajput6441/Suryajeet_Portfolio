@@ -1,3 +1,4 @@
+"use client";
 import React from "react";
 
 const WorkingProcess = () => {
@@ -88,8 +89,19 @@ const WorkingProcess = () => {
         </div>
 
         {/* Bottom CTA */}
-        <div className="text-center mt-16">
-          <button className="bg-orange-500 text-white px-8 py-4 rounded-full font-bold text-lg transform transition-all duration-300 hover:scale-105 hover:bg-orange-600 cursor-pointer">
+        <div className="text-center mt-16 ">
+          <button
+            onClick={() => {
+              const element = document.getElementById("contact");
+              if (element) {
+                element.scrollIntoView({
+                  behavior: "smooth",
+                  block: "start",
+                });
+              }
+            }}
+            className="bg-orange-500 text-white px-8 py-4 rounded-full font-bold text-lg transform transition-all duration-300 hover:scale-105 hover:bg-orange-600 cursor-pointer"
+          >
             Ready to Start Your Project?
           </button>
         </div>
