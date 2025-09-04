@@ -6,7 +6,7 @@ const Banner = () => {
   return (
     <section
       id="banner"
-      className="relative w-full h-[70vh] -mt-1  overflow-hidden"
+      className="relative w-full h-[70vh] -mt-1 md:h-screen md:mt-0  overflow-hidden"
     >
       {/* Mobile Banner - Hidden on desktop */}
       <Image
