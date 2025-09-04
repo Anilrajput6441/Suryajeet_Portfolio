@@ -15,9 +15,9 @@ const Footer = () => {
           </div>
 
           {/* Social Media Links - Two Columns */}
-          <div className=" gap-8 max-w-2xl mx-auto">
+          <div className=" gap-8 max-w-2xl mx-auto ">
             {/* Right Column */}
-            <div className=" flex gap-40 items-center justify-center">
+            <div className=" flex gap-20 md:gap-40 items-center justify-center">
               <Link
                 href="https://www.instagram.com/brandingworkz?igsh=cHhnYWIyZmN4b2d3"
                 target="_blank"
@@ -46,10 +46,10 @@ const Footer = () => {
           <div className="text-center mb-12">
             <p className="text-gray-400 text-lg mb-2">Email me at</p>
             <a
-              href="mailto:singhsurya323@gmail.com"
+              href="mailto:singhsurya3233@gmail.com"
               className="text-white text-2xl lg:text-3xl font-bold underline hover:text-orange-500 transition-colors"
             >
-              singhsurya323@gmail.com
+              singhsurya3233@gmail.com
             </a>
           </div>
 

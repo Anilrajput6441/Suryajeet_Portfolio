@@ -7,27 +7,27 @@ const WorkingProcess = () => {
       number: "1",
       title: "Plan the Project",
       description:
-        "Providing the best digital marketing services to help your brand to grow faster. I always give my best to help my clients.",
+        "We plan the project according to your business needs. We will discuss the project with you and then we will start the project. We will provide the best solution for your business.",
     },
     {
       number: "2",
-      title: "Fix the Marketing",
+      title: "Setup the Digital Infrastructure from scratch",
       description:
-        "Providing the best digital marketing services to help your brand to grow faster. I always give my best to help my clients.",
+        "We setup the marketing and digital infrastructure according to your business needs. We will discuss the project with you and then we will start the project.",
     },
     {
       number: "3",
-      title: "Provide Conclusion",
+      title: "Provide the Result",
       description:
-        "Providing the best digital marketing services to help your brand to grow faster. I always give my best to help my clients.",
+        "We provide the result according to your business needs. We will discuss the project with you and then we will start the project.",
     },
   ];
 
   const stats = [
-    { number: "150+", label: "Projects Completed" },
+    { number: "50+", label: "Projects Completed" },
     { number: "98%", label: "Client Satisfaction" },
-    { number: "5+", label: "Years Experience" },
-    { number: "$2M+", label: "Revenue Generated" },
+    { number: "2+", label: "Years Experience" },
+    { number: "2M+", label: "Revenue Generated" },
   ];
 
   return (
@@ -38,7 +38,7 @@ const WorkingProcess = () => {
           {/* Orange line + subtitle */}
           <div className="flex items-center justify-center gap-3 mb-4">
             <div className="w-16 h-1 bg-orange-500 rounded-full"></div>
-            <span className="text-gray-700 font-medium">My Process</span>
+            <span className="text-gray-700 font-medium">Our Process</span>
           </div>
 
           <h2 className="text-4xl lg:text-5xl font-bold mb-6">
@@ -47,8 +47,9 @@ const WorkingProcess = () => {
           </h2>
 
           <p className="text-gray-800 text-lg lg:text-xl max-w-3xl mx-auto leading-relaxed">
-            I'm a Digital Marketer based in New York, USA. Providing the best
-            digital marketing services to help your brand.
+            We are best digital marketing services provider based in Noida,
+            India. Providing the best digital marketing services to help your
+            brand.
           </p>
         </div>
 

@@ -7,7 +7,7 @@ const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [activeLink, setActiveLink] = useState("Home");
 
-  const navLinks = ["Home", "Services", "About", "Testimonials", "Contact"];
+  const navLinks = ["Home", "Services", "About", "Contact"];
 
   const handleLinkClick = (link) => {
     setActiveLink(link);
@@ -29,7 +29,7 @@ const Navbar = () => {
       Home: "banner",
       Services: "services",
       About: "about",
-      Testimonials: "testimonials",
+      // Testimonials: "testimonials",
       Contact: "contact",
     };
 

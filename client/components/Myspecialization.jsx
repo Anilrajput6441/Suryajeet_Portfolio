@@ -16,8 +16,12 @@ const Myspecialization = () => {
       ],
       description:
         "Every business is unique, so a ready-made template doesn't always work. A custom website means the design and features are built specifically around your business needs. Gives a professional look, fast performance, SEO-friendly structure, and builds trust with customers.",
-      image:
-        "https://www.internetcreation.net/wp-content/uploads/2015/04/banner-web-development.png",
+      images: {
+        mobile:
+          "https://img.freepik.com/free-photo/website-development-links-seo-webinar-cyberspace-concept_53876-120953.jpg?semt=ais_incoming&w=740&q=80", // Using content.jpeg for mobile
+        desktop:
+          "https://www.internetcreation.net/wp-content/uploads/2015/04/banner-web-development.png",
+      },
     },
     {
       id: 1,
@@ -31,8 +35,12 @@ const Myspecialization = () => {
       ],
       description:
         "Shopify is the simplest and most scalable platform for eCommerce. We create custom-coded Shopify stores that are optimized for high conversions. Easy store management, secure payments, smooth order handling, and effortless scalability.",
-      image:
-        "https://www.nicepng.com/png/detail/267-2675863_shopify-card-shopify-web-designer-banner.png",
+      images: {
+        mobile:
+          "https://www.samarpaninfotech.com/wp-content/uploads/2021/12/banner-right-img.png", // Using content.jpeg for mobile
+        desktop:
+          "https://www.nicepng.com/png/detail/267-2675863_shopify-card-shopify-web-designer-banner.png",
+      },
     },
     {
       id: 2,
@@ -46,8 +54,11 @@ const Myspecialization = () => {
       ],
       description:
         "With Meta Ads, we target the exact audience interested in your product or service. Drives quality leads, builds brand awareness, boosts sales, and delivers measurable ROI.",
-      image:
-        "https://itmunch.com/wp-content/uploads/2024/03/meta-banner-cta.webp",
+      images: {
+        mobile: "/Service/Facebook.jpeg", // Using Facebook.jpeg for mobile
+        desktop:
+          "https://itmunch.com/wp-content/uploads/2024/03/meta-banner-cta.webp",
+      },
     },
     {
       id: 3,
@@ -61,8 +72,11 @@ const Myspecialization = () => {
       ],
       description:
         "Google Ads place your business directly in front of people actively searching for your products or services. High-intent audience, quick results, and performance tracking with clear ROI.",
-      image:
-        "https://www.nellaiseo.com/wp-content/uploads/2024/05/google-ads-services-in-chennai.jpg",
+      images: {
+        mobile: "/Service/Google.jpeg", // Using Google.jpeg for mobile
+        desktop:
+          "https://www.nellaiseo.com/wp-content/uploads/2024/05/google-ads-services-in-chennai.jpg",
+      },
     },
     {
       id: 4,
@@ -76,8 +90,11 @@ const Myspecialization = () => {
       ],
       description:
         "For schools, coaching centers, or online trainers, we build an LMS where students can log in, access courses, track progress, and even take online exams. A professional system to sell and deliver online education seamlessly.",
-      image:
-        "https://www.shutterstock.com/image-vector/lms-learning-management-system-web-260nw-1886681293.jpg",
+      images: {
+        mobile: "/Service/LMS.jpeg", // Using LMS.jpeg for mobile
+        desktop:
+          "https://www.shutterstock.com/image-vector/lms-learning-management-system-web-260nw-1886681293.jpg",
+      },
     },
     {
       id: 5,
@@ -91,8 +108,11 @@ const Myspecialization = () => {
       ],
       description:
         "A website and ads aren't enough; content builds long-term trust. We create strategies for blogs, social media, and SEO content tailored to your brand. Establishes brand authority, drives organic traffic, and engages your audience effectively.",
-      image:
-        "https://cdn.vectorstock.com/i/1000v/32/92/content-marketing-banner-with-icons-website-vector-39813292.jpg",
+      images: {
+        mobile: "/Service/content.jpeg", // Using content.jpeg for mobile
+        desktop:
+          "https://cdn.vectorstock.com/i/1000v/32/92/content-marketing-banner-with-icons-website-vector-39813292.jpg",
+      },
     },
   ];
 
@@ -110,7 +130,7 @@ const Myspecialization = () => {
             <div className="flex items-center gap-3 mb-4">
               <div className="w-12 h-1 bg-orange-500 rounded-full"></div>
               <span className="text-gray-700 font-medium">
-                My Specialization
+                Our Specialization
               </span>
             </div>
 
@@ -125,10 +145,9 @@ const Myspecialization = () => {
           {/* Description */}
           <div className="flex items-center">
             <p className="text-gray-600 text-lg leading-relaxed">
-              Transforming brands through data-driven digital strategies. From
-              analytics insights to conversion optimization, I craft campaigns
-              that deliver measurable results and drive sustainable growth for
-              your business.
+              We help brand from scratch to grow faster. We are expert in
+              Digital Marketing,Custom Website Development,Product Strategy and
+              Shopify Development. Your all in one digital Expert!
             </p>
           </div>
         </div>
@@ -205,17 +224,24 @@ const Myspecialization = () => {
                     {service.description}
                   </p>
 
-                  {/* Illustrative Image */}
+                  {/* Illustrative Image - Responsive */}
                   <div
                     className="w-full h-64 bg-gray-800 rounded-xl overflow-hidden transform transition-all duration-300 "
                     style={{
                       animation: "fadeInUp 0.8s ease-out both",
                     }}
                   >
+                    {/* Mobile Image - Hidden on desktop */}
                     <img
-                      src={service.image}
+                      src={service.images.mobile}
                       alt={service.title}
-                      className="w-full h-full object-cover"
+                      className="w-full h-full object-cover md:hidden"
+                    />
+                    {/* Desktop Image - Hidden on mobile */}
+                    <img
+                      src={service.images.desktop}
+                      alt={service.title}
+                      className="w-full h-full object-cover hidden md:block"
                     />
                   </div>
                 </div>
